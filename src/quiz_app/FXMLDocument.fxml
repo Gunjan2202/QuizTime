@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="887.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz_app.FXMLDocumentController">
+   <right>
+      <AnchorPane prefHeight="566.0" prefWidth="454.0" style="-fx-background-color: linear-gradient(to right bottom, #ffffff, #f7f7f7, #efefef, #e8e8e8, #e0e0e0); -fx-background-radius: 0 10 10 0; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 30, 0.5, 0.0, 0.0);" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="uname" layoutX="151.0" layoutY="214.0" promptText="username" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="upass" layoutX="151.0" layoutY="292.0" promptText="password" style="-fx-background-color: trasnparent; -fx-border-color: grey; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="lsubmit" layoutX="186.0" layoutY="393.0" mnemonicParsing="false" onAction="#lsubmitaction" style="-fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 25, 0.3, 0.0, 6); -fx-padding: 10 20 10 20 10; -fx-background-color: linear-gradient(to left bottom, #4840f6, #0088ff, #00b9ff, #81e0fa, #f1ffff);" text="Submit" textFill="WHITE" />
+            <Label fx:id="lpass" layoutX="300.0" layoutY="296.0" prefHeight="18.0" prefWidth="70.0" />
+            <Label fx:id="lname" layoutX="303.0" layoutY="218.0" prefHeight="18.0" prefWidth="94.0" />
+            <Text layoutX="166.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+               <font>
+                  <Font name="MV Boli" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane blendMode="MULTIPLY" prefHeight="566.0" prefWidth="432.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);; -fx-background-color: linear-gradient(to left bottom, #4840f6, #0088ff, #00b9ff, #81e0fa, #f1ffff);" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="75.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back!" wrappingWidth="282.3213539123535">
+               <font>
+                  <Font name="Arial Bold" size="37.0" />
+               </font>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Text>
+            <Text fill="WHITE" layoutX="36.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To keep connected with us please login" wrappingWidth="366.78306007385254">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="98.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with your personal info" wrappingWidth="242.03722381591797">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

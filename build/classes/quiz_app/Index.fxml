@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="850.0" style="-fx-background-color: linear-gradient(to left bottom, #4840f6, #0088ff, #00b9ff, #81e0fa, #f1ffff);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz_app.IndexController">
+   <children>
+      <Pane layoutX="62.0" layoutY="25.0" prefHeight="546.0" prefWidth="862.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: white; -fx-border-radius: 20 20 20 20\; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 25, 0.3, 0.0, 6);">
+         <children>
+            <Pane prefHeight="80.0" prefWidth="862.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.4, 0.0, 0.0); -fx-background-color: linear-gradient(to right bottom, #ffffff, #f7f7f7, #efefef, #e8e8e8, #e0e0e0); -fx-background-radius: 10 10 0 0;">
+               <children>
+                  <Text fill="#0400ff" layoutX="6.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Choose a Subject" wrappingWidth="869.6000083923341">
+                     <font>
+                        <Font name="MV Boli" size="48.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="java" layoutX="68.0" layoutY="138.0" mnemonicParsing="false" onAction="#javaaction" prefHeight="42.0" prefWidth="229.0" style="-fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 25, 0.3, 0.0, 6); -fx-padding: 10 20 10 20 10; -fx-background-color: linear-gradient(to left bottom, #4840f6, #0088ff, #00b9ff, #81e0fa, #f1ffff);" text="JAVA" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="osp" layoutX="66.0" layoutY="231.0" mnemonicParsing="false" onAction="#opsaction" prefHeight="42.0" prefWidth="229.0" style="-fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 25, 0.3, 0.0, 6); -fx-padding: 10 20 10 20 10; -fx-background-color: linear-gradient(to left bottom, #4840f6, #0088ff, #00b9ff, #81e0fa, #f1ffff);" text="OSP" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="dmt" layoutX="66.0" layoutY="321.0" mnemonicParsing="false" onAction="#dmtaction" prefHeight="42.0" prefWidth="229.0" style="-fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 25, 0.3, 0.0, 6); -fx-padding: 10 20 10 20 10; -fx-background-color: linear-gradient(to left bottom, #4840f6, #0088ff, #00b9ff, #81e0fa, #f1ffff);" text="DMT" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="nis" layoutX="68.0" layoutY="411.0" mnemonicParsing="false" onAction="#nisaction" prefHeight="42.0" prefWidth="229.0" style="-fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 25, 0.3, 0.0, 6); -fx-padding: 10 20 10 20 10; -fx-background-color: linear-gradient(to left bottom, #4840f6, #0088ff, #00b9ff, #81e0fa, #f1ffff);" text="NIS" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="434.0" prefHeight="600.0" prefWidth="551.0">
+         <children>
+            <Line endX="491.60003662109375" endY="103.99996948242188" startX="-372.0" startY="103.99996948242188" />
+            <ImageView fitHeight="434.0" fitWidth="499.0" layoutX="-14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Capture.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
