@@ -1,0 +1,75 @@
+
+#include<bits/stdc++.h>
+
+typedef long long int ll;
+
+using namespace std;
+
+long marathon(long s,vector<long> checkpoint)
+{
+    int n=checkpoint.size();
+    long d=s;
+    long i,j,k,x;
+    if(n==1)
+    {
+        return 0;
+    }
+
+    sort(checkpoint.begin(),checkpoint.end());
+
+    if(d<=checkpoint[0])
+        return abs(d-checkpoint[n-2]);
+
+    else if(d>=checkpoint[n-1])
+        return abs(d-checkpoint[1]);
+
+    else
+    {
+        i=0;
+        //leave the left most
+        if(d<=checkpoint[1])
+            i=abs(d-checkpoint[n-1]);
+        else
+        {
+            j=abs(d-checkpoint[1]);
+            k=abs(d-checkpoint[n-1]);
+
+            i=j+k+min(j,k);
+        }
+
+        //leave the right most
+        if(d>=checkpoint[n-2])
+            j=abs(d-checkpoint[0]);
+        else
+        {
+            j=abs(d-checkpoint[n-2]);
+            k=abs(d-checkpoint[0]);
+
+            x=j+k+min(j,k);
+            j=x;
+        }
+
+        i=min(i,j);
+        return i;
+    }
+
+}
+
+int main()
+{
+    int i,j,k;
+    long n,d,x;
+
+    cin>>n>>d;
+    int temp;
+    vector<long> checkpoint;
+    for(i=0;i<n;i++)
+    {
+        cin>>temp;
+        checkpoint.push_back(temp);
+    }
+    cout<<marathon(d, checkpoint);    
+
+    
+    return 0;
+}
